@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+</head>
+<body>
+    <div class="container col-sm-5 bg-dark text-light mt-5 pb-5 pl-5">
+        <div>
+            <h3 class="pt-5 text-success">Dojo Survey</h3>
+            <h5 class="pt-4 pb-4 text-light font-weight-bold">Submitted Info</h5>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Name:</td>
+                        <td>{{name}}</td>
+                    </tr>
+                    <tr>
+                        <td>Dojo Location</td>
+                        <td>{{location}}</td>
+                    </tr>
+                    <tr>
+                        <td>FAvorite Language</td>
+                        <td>{{language}}</td>
+                    </tr>
+                    <tr>
+                        <td>Comments:</td>
+                        <td>{{comments}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
